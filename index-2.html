@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title> Kaliedoreads </title>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<style>
+	#fold {
+		background-image: url("../img/overlay.png"), url("../img/banner-2.jpeg") !important;
+	}
+	</style>
+
+	</head>
+
+	<body>
+
+	<div id="body-wrap">
+
+
+	<section id="fold">
+	<div id="fold-div">
+	<h1> Kaliedoreads </h1>
+
+	<h3>Some of literature’s best works combined with symbolic typographhy of its time.</h3>
+
+	</div>
+	<div id="readmore">
+
+	<a href="#books-display"> <p> Read a Book </p> </a>
+</div>
+
+
+	</section>
+
+	<section id="books-display">
+	Coming soon
+	</section>
+
+
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <script>
+     $('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+</script>
+	</body>
+	</html>
